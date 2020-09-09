@@ -1,5 +1,6 @@
 package com.rest.kotlin.Rest.Maven.Project
 
+import com.rest.kotlin.Rest.Maven.Project.domain.Person
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 import org.springframework.web.bind.annotation.GetMapping
@@ -9,8 +10,8 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 class RestMavenProjectApplication{
 	@GetMapping
-	fun sayHello():String{
-		return "Hello World"
+	fun person(): Person {
+		return Person(1, "Elijah", "Ayeeta")
 	}
 }
 
