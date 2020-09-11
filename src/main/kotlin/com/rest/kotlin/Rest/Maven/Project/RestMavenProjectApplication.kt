@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController
 class RestMavenProjectApplication{
 	@GetMapping
 	fun person(): Person {
-		return Person(1, "Elijah", "Ayeeta")
+		return Person(2, "Joe", "Rudolf")
 	}
 }
 
